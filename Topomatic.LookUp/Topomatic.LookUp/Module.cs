@@ -12,7 +12,7 @@ namespace Topomatic.LookUp
         [cmd("lookup_cmd")]
         public void LookUpFunction()
         {
-            MessageDlg.Show("Hello world");
+            MessageDlg.Show("Hello world+");
         }
     }
 }

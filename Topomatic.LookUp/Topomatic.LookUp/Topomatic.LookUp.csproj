@@ -45,24 +45,20 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Topomatic.ApplicationPlatform, Version=16.0.38.7, Culture=neutral, PublicKeyToken=e252492115b01327, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Program Files\Topomatic Robur edu 16.0\Topomatic.ApplicationPlatform.dll</HintPath>
+    <Reference Include="Topomatic.ApplicationPlatform">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Topomatic Robur edu 16.0\Topomatic.ApplicationPlatform.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Topomatic.Controls, Version=16.0.38.7, Culture=neutral, PublicKeyToken=e252492115b01327, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Program Files\Topomatic Robur edu 16.0\Topomatic.Controls.dll</HintPath>
+    <Reference Include="Topomatic.Controls">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Topomatic Robur edu 16.0\Topomatic.Controls.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Topomatic.FoundationClasses, Version=16.0.38.7, Culture=neutral, PublicKeyToken=e252492115b01327, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Program Files\Topomatic Robur edu 16.0\Topomatic.FoundationClasses.dll</HintPath>
+    <Reference Include="Topomatic.FoundationClasses">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Topomatic Robur edu 16.0\Topomatic.FoundationClasses.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Topomatic.Stg, Version=16.0.38.7, Culture=neutral, PublicKeyToken=e252492115b01327, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Program Files\Topomatic Robur edu 16.0\Topomatic.Stg.dll</HintPath>
+    <Reference Include="Topomatic.Stg">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Topomatic Robur edu 16.0\Topomatic.Stg.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
