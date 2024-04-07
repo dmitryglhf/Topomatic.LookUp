@@ -1,0 +1,59 @@
+﻿{
+  "assemblies": {
+    "Topomatic.LookUp": {
+      "assembly": "Topomatic.LookUp.dll, Topomatic.LookUp.ModulePluginHost"
+    }
+  },
+  "actions": {
+    "action_id_1": {
+      "cmd": "lookup_cmd",
+      "title": "Выбрать",
+      "description": "Информация об элементе",
+      "icon": "explorer"
+    }
+  },
+  //Меню
+  "menubars": {
+    "rbproj": {
+      "items": [
+        {
+          "id": "lookup_menu",
+          "title": "LookUp"
+        }
+      ]
+    },
+    "rbproj.lookup_menu": {
+      "items": [
+        "action_id_1"
+      ]
+    }
+  },
+    //Панель
+    "ribbon": {
+      "rbproj": {
+        "items": [
+          {
+            "group": "lookup_tab",
+            "title": "LookUp"
+          }
+        ]
+      },
+      "rbproj.lookup_tab": {
+        "items": [
+          {
+            "group": "information_group",
+            "title": "Информация"
+          }
+        ]
+      },
+
+      "rbproj.lookup_tab.information_group": {
+        "items": [
+          {
+            "button": "action_id_1",
+            "size": "large"
+          }
+        ]
+      }
+    }
+  }
