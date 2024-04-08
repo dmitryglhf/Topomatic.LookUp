@@ -33,6 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.collapseBtn = new System.Windows.Forms.Button();
             this.labelObject = new System.Windows.Forms.Label();
             this.closeBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -51,6 +52,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.panel1.Controls.Add(this.collapseBtn);
             this.panel1.Controls.Add(this.labelObject);
             this.panel1.Controls.Add(this.closeBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -62,25 +64,42 @@
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mouseMove_Event);
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mouseUp_Event);
             // 
+            // collapseBtn
+            // 
+            this.collapseBtn.AutoSize = true;
+            this.collapseBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.collapseBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.collapseBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.collapseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.collapseBtn.Image = ((System.Drawing.Image)(resources.GetObject("collapseBtn.Image")));
+            this.collapseBtn.Location = new System.Drawing.Point(823, 4);
+            this.collapseBtn.Name = "collapseBtn";
+            this.collapseBtn.Size = new System.Drawing.Size(33, 33);
+            this.collapseBtn.TabIndex = 4;
+            this.collapseBtn.UseVisualStyleBackColor = false;
+            this.collapseBtn.Click += new System.EventHandler(this.collapseBtn_Click);
+            // 
             // labelObject
             // 
             this.labelObject.AutoSize = true;
-            this.labelObject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelObject.Location = new System.Drawing.Point(34, 8);
+            this.labelObject.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelObject.Location = new System.Drawing.Point(36, 9);
             this.labelObject.Name = "labelObject";
-            this.labelObject.Size = new System.Drawing.Size(100, 25);
+            this.labelObject.Size = new System.Drawing.Size(95, 24);
             this.labelObject.TabIndex = 2;
             this.labelObject.Text = "Элемент";
             // 
             // closeBtn
             // 
+            this.closeBtn.AutoSize = true;
+            this.closeBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.closeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.closeBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.closeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeBtn.Image = ((System.Drawing.Image)(resources.GetObject("closeBtn.Image")));
-            this.closeBtn.Location = new System.Drawing.Point(858, 4);
+            this.closeBtn.Location = new System.Drawing.Point(862, 4);
             this.closeBtn.Name = "closeBtn";
-            this.closeBtn.Size = new System.Drawing.Size(32, 32);
+            this.closeBtn.Size = new System.Drawing.Size(33, 33);
             this.closeBtn.TabIndex = 1;
             this.closeBtn.UseVisualStyleBackColor = false;
             this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
@@ -184,6 +203,7 @@
             this.Properties.HeaderText = "Свойства";
             this.Properties.MinimumWidth = 6;
             this.Properties.Name = "Properties";
+            this.Properties.ReadOnly = true;
             this.Properties.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.Properties.Width = 250;
             // 
@@ -193,6 +213,7 @@
             this.Values.HeaderText = "Значения";
             this.Values.MinimumWidth = 6;
             this.Values.Name = "Values";
+            this.Values.ReadOnly = true;
             this.Values.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // MainMenu
@@ -204,9 +225,11 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainMenu";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MainMenu";
+            this.Text = "Look up";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -226,6 +249,7 @@
         private System.Windows.Forms.Button infoBtn;
         private System.Windows.Forms.Label labelObject;
         private System.Windows.Forms.DataGridView dataGridView;
+        private System.Windows.Forms.Button collapseBtn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Properties;
         private System.Windows.Forms.DataGridViewTextBoxColumn Values;
     }
